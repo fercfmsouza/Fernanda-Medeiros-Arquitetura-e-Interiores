@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: "Haleway", sans-serif;
+  color: #050606;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f2f2;
+  height: 120px;
+  margin: 45px 140px 0 140px;
+  padding-right: 60px;
+  padding-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu img {
+  margin-right: 6px;
+}
+
+.logo {
+  height: 90px;
+  width: 150px;
+}
+
+.menu a:hover {
+  color: #d6c8c8;
+  fill: #d6c8c8;
+}
+
+main {
+  position: relative;
+}
+
+.img-bg {
+  position: absolute;
+  z-index: -1;
+  top: -165px;
+  left: 0;
+  object-fit: contain;
+}
+
+.img-bg img {
+  max-width: 1280px;
+}
+
+.content {
+  display: flex;
+  margin: 0 140px;
+  align-items: flex-end;
+  text-align: left;
+  padding-top: 280px;
+}
+
+h1 {
+  font-size: 100px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #3d3d3d;
+}
+
+.quote {
+  text-align: center;
+  margin-top: 180px;
+  margin-bottom: 60px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #d6c8c8;
+  color: #fff;
+  padding: 16px 32px;
+  font-size: 24px;
+  max-width: max-content;
+  border-radius: 2px;
+  margin-top: 20px;
+  border: 2px solid #d6c8c8;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.btn:hover {
+  color: #7a7a7a;
+  background-color: #fff;
+  border: 2px solid #7a7a7a;
+}
+
+.follow {
+  text-align: left;
+  margin: 0 140px;
+  color: #3d3d3d;
+  font-size: 24px;
+  width: 45ch;
+  padding-top: 80px;
+  margin-right: 20px;
+}
+
+.follow h3 {
+  border-left: 6px solid #d6c8c8;
+  padding-left: 20px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f2f2;
+  padding: 40px 140px;
+  font-size: 20px;
+  color: #7a7a7a;
+}
+
+.email:hover {
+  color: #050606;
+}
+
+.social-medias a {
+  padding-right: 20px;
+}
+
+.social-medias a:hover path {
+  color: #050606;
+  fill: #050606;
+}
+
+footer {
+  background-color: #a3a3a3;
+  color: #fafafa;
+  padding: 10px 140px;
+}
+
+.menu a:hover svg {
+  animation: spin 1.5s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  .content {
+    padding-top: 180px;
+  }
+
+  .content img {
+    width: 90px;
+    height: 90px;
+  }
+}
